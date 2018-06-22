@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import './App.css';
 
 class App extends Component {
@@ -38,9 +37,7 @@ class App extends Component {
         <div>
           {this.state.friends.map(friend => {
             return (
-              <div>
-                <p><img src={friend.picture} alt={friend.name} /> {friend.name}</p>
-              </div>
+              <p><img src={friend.picture} alt={friend.name} /> {friend.name}</p>
             )
           })}
         </div>
@@ -50,11 +47,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-
-  
-
-
-
-
